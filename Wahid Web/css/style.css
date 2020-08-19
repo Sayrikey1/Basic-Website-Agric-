@@ -1,0 +1,194 @@
+.contactInfo{
+    background: aliceblue;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card{
+    border-radius: 40px;
+    border-color: aqua;
+    border-style: solid;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .navbar{
+        width: 100%;
+    }
+    #contact#form{
+        width: 100%;
+    }
+}
+
+img{
+    border-radius: 20px;
+}
+
+.content{
+    position: static;
+}
+
+.para{
+    background-color: aliceblue;
+    background-blend-mode: screen;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.hbig{
+    background-blend-mode: soft-light,screen;
+    background-position: center;
+    width: 100%;
+    position: static;
+    top: 2px;
+   
+}
+footer{
+    background:black;
+    opacity: 0.8;
+    color: aqua;
+    padding-bottom: -40px;
+    margin-left: -30px;
+    margin-right: -30px;
+
+}
+.midd{
+    padding-bottom: 5px;
+}
+.middle{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: blue;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: aqua;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.btn i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i{
+    transform: scale(1.3);
+    color: aqua;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: blue;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%; 
+    }50%{
+        left: 10%;
+        top: -30%; 
+    }100%{
+        left: -10%;
+        top: -10%; 
+    }
+}
+.copyright{
+    margin-bottom: 0px;
+    padding-top: -10px;
+    padding-bottom: 1px;
+}
+ul{
+    list-style-type: none;
+}
+
+.nav-link{
+   font-family:serif;
+    font-size: 17px;
+    font-style: oblique;
+    border: 2px solid #333;
+    background: #2c2e31;
+    border-radius: 10px;
+     transition: 0.45s;
+    background-position: center;
+}
+
+.nav-link:hover{
+    background-color: aqua;
+    color: black;
+    transition: 0.45s;
+}
+.navbar{
+    background-position: center;
+    width: inherit;
+    margin-top: auto;
+    position: fixed;
+    top: 0px;
+   
+}
+
+/********************Contact Page***************************/
+#contact .page-header {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+#contact #form {
+    width:80%;
+    /* You can remove the borders, when doing 3D stylings
+    border: 2px solid black;*/
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    box-shadow: 0px 9px 13px 5px;
+    border-radius: 5px;
+}
+
+#contact #form input {
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    background: #ceb7b7;
+}
+
+#contact #form #message {
+    width: 100%;
+    border-radius: 5px;
+    background: #ceb7b7;
+}
+
+#contact #form input:hover {
+    background: white;
+}
+#contact #form #message:hover {
+    background: white;
+}
+#contact #form #submit {
+    height: 30px;
+    background: #3e3e52;
+}
+
+#contact #form #submit:hover {
+    background: white;
+}
